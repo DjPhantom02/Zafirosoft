@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "usuarioscursoy",
+  "info": {
+    "singularName": "usuarioscursos",
+    "pluralName": "usuarioscursoy",
+    "displayName": "UsuariosCursos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UserId": {
+      "type": "integer"
+    },
+    "Cursold": {
+      "type": "integer"
+    },
+    "Assigned_by": {
+      "type": "integer"
+    },
+    "Created_by": {
+      "type": "integer"
+    },
+    "Created_at": {
+      "type": "date"
+    },
+    "Updated_by": {
+      "type": "integer"
+    },
+    "Updated_at": {
+      "type": "date"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "usuarios_cursos"
+    }
+  }
+}

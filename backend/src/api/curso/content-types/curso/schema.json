@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cursoy",
+  "info": {
+    "singularName": "curso",
+    "pluralName": "cursoy",
+    "displayName": "Curso",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "string"
+    },
+    "Activo": {
+      "type": "boolean"
+    },
+    "ImagenUrl": {
+      "type": "string"
+    },
+    "CursoUrl": {
+      "type": "string"
+    },
+    "Created_by": {
+      "type": "integer"
+    },
+    "Created_at": {
+      "type": "date"
+    },
+    "Updated_by": {
+      "type": "integer"
+    },
+    "Updated_at": {
+      "type": "date"
+    }
+  }
+}

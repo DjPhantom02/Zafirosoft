@@ -1,0 +1,9 @@
+'use strict';
+
+/**
+ * rutas router
+ */
+
+const { createCoreRouter } = require('@strapi/strapi').factories;
+
+module.exports = createCoreRouter('api::rutas.rutas');

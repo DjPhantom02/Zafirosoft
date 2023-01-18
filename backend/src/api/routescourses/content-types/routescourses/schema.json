@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "routescoursey",
+  "info": {
+    "singularName": "routescourses",
+    "pluralName": "routescoursey",
+    "displayName": "RoutesCourses",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RutaId": {
+      "type": "integer"
+    },
+    "CursoId": {
+      "type": "integer"
+    },
+    "Created_by": {
+      "type": "integer"
+    },
+    "Created_at": {
+      "type": "date"
+    },
+    "Updated_by": {
+      "type": "integer"
+    },
+    "Updated_at": {
+      "type": "date"
+    },
+    "ruta": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::rutas.rutas",
+      "inversedBy": "routes_courses"
+    }
+  }
+}

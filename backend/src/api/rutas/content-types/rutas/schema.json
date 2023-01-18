@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rutay",
+  "info": {
+    "singularName": "rutas",
+    "pluralName": "rutay",
+    "displayName": "Rutas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "string"
+    },
+    "Activo": {
+      "type": "boolean"
+    },
+    "Created_by": {
+      "type": "integer"
+    },
+    "Created_at": {
+      "type": "date"
+    },
+    "Updated_by": {
+      "type": "integer"
+    },
+    "Updated_at": {
+      "type": "date"
+    },
+    "routes_courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::routescourses.routescourses",
+      "mappedBy": "ruta"
+    }
+  }
+}
